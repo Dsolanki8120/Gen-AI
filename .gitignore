@@ -1,0 +1,19 @@
+cat > .gitignore <<EOF
+# Ignore Dataset
+Images/
+captions.txt
+
+# Ignore Virtual Environment
+venv/
+.venv/
+env/
+
+# Ignore Python Cache and System files
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore Large Model Weights (Too big for GitHub)
+*.pth
+*.pt
+EOF
