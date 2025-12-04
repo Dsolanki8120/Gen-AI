@@ -47,13 +47,10 @@ Clone the repository and install dependencies:
    Dataset Link: Kaggle - https://www.kaggle.com/datasets/adityajn105/flickr8k
    
    Training the Model
-      To train the model from scratch (10 Epochs):
          python train.py
    Inference (Testing on Random Images)
-      To generate a caption for a random image from the dataset:
          python inference.py
    Evaluation (BLEU Scores)
-      To calculate BLEU-1 to BLEU-4 scores on the test set:
          python evaluate.py
 
 ---------------------------------------------------------------------------------------------------------------------
