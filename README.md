@@ -2,7 +2,7 @@ Image Caption Generation using Vision Transformer (ViT) and Transformer Decoder
 
 A multimodal Deep Learning project that generates natural language descriptions for images by bridging Computer Vision and Natural Language Processing (NLP). This project replaces traditional CNN-LSTM architectures with a fully attention-based mechanism.
 
-Project Overview:
+* Project Overview:
 *   **Goal:Generate accurate and fluent captions for input images.
 *   **Architecture:** Hybrid Transformer Model.
     *   **Encoder:** Vision Transformer (ViT-Base) pre-trained on ImageNet.
@@ -36,7 +36,16 @@ The system follows an Encoder-Decoder pipeline:
 
 ### Installation
 Clone the repository and install dependencies:
-```bash
-git clone https://github.com/Dsolanki8120/Gen-AI.git
-cd Gen-AI
-pip install torch torchvision transformers pandas pillow nltk tqdm
+   ```bash
+   git clone https://github.com/Dsolanki8120/Gen-AI.git
+   cd Gen-AI
+   pip install torch torchvision transformers pandas pillow nltk tqdm
+
+
+Dataset Setup
+Due to size constraints, the Flickr8k dataset is not included in this repo.
+Dataset Link: Kaggle - https://www.kaggle.com/datasets/adityajn105/flickr8k
+
+Training the Model
+ To train the model from scratch (10 Epochs):
+
