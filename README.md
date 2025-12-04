@@ -71,15 +71,30 @@ Comparison with State-of-the-Art
    To benchmark our model, we compared its performance against BLIP-2 (Salesforce Research, 2023), a leading massive multimodal model.
    Our Model: Trained on Flickr8k (8,000 images). Focuses on factual, object-centric descriptions.
 
-### Qualitative Results
+Qualitative Results
 
-| Image | Our Model Prediction (Descriptive) | SOTA: BLIP-2 Prediction | Analysis |
-| :--- | :--- | :--- | :--- |
-| `children_hay.jpg` | "Three happy children are playing with dry grass in an open field, throwing it in the air and enjoying the sunny day." | "Children joyfully toss hay into the air while playing outdoors, surrounded by bright sunlight and an open sky." | Our model captures the count (three) and action correctly. BLIP-2 adds atmospheric details like "bright sunlight." |
-| `pig_crowd.jpg` | "A group of children are trying to catch a small pig while many people stand behind a fence watching them." | "Children chase and grab a small pig in a fenced outdoor area as a large crowd gathers around to watch the playful event." | Our model correctly identifies the "catch" action. BLIP-2 infers the context of a "playful event." |
-| `skater.jpg` | "A person is doing a bicycle stunt by riding high on a wall in an outdoor area." | "A cyclist performs an impressive wall-ride trick on a BMX bike, climbing high up a brick wall in a sunny outdoor setting." | Our model identifies "bicycle stunt." BLIP-2 recognizes the specific bike type ("BMX") and trick name ("wall-ride"). |
-| `skiing.jpg` | "Two people wearing ski gear are sitting on a ski lift, hanging in the air with their skis on." | "Two skiers ride a high ski lift, dressed in helmets and goggles, with their skis dangling against the clear blue sky." | Our model uses simple words ("hanging in the air"). BLIP-2 uses more descriptive vocabulary ("dangling against clear blue sky"). |
-| `dog_shake.jpg` | "A dog is shaking its body in the water, making splashes all around." | "A wet dog vigorously shakes off water, sending droplets flying in all directions while standing in a shallow pond." | Success Case: Our model captures the exact action. BLIP-2 enhances it with adverbs like "vigorously." |
+
+
+children_hay.jpg:
+        Our Model Prediction: Three happy children are playing with dry grass in an open field, throwing it in the air and enjoying the sunny day.
+        BLIP-2 Prediction:  Children joyfully toss hay into the air while playing outdoors, surrounded by bright sunlight and an open sky.
+        Analysis:           Our model captures the count (three) and action correctly. BLIP-2 adds atmospheric details like "bright sunlight.
+pig_crowd.jpg:
+         Our Model Prediction: A group of children are trying to catch a small pig while many people stand behind a fence watching them.
+         BLIP-2 Prediction: Children chase and grab a small pig in a fenced outdoor area as a large crowd gathers around to watch the playful event.
+         Anaylsis:          Our model correctly identifies the "catch" action. BLIP-2 infers the context of a "playful event." |
+skater.jpg:
+         Our Model Prediction: A person is doing a bicycle stunt by riding high on a wall in an outdoor area.
+         BLIP-2 Prediction :  A cyclist performs an impressive wall-ride trick on a BMX bike, climbing high up a brick wall in a sunny outdoor setting.
+         Anaylsis:        Our model identifies "bicycle stunt. BLIP-2 recognizes the specific bike type ("BMX") and trick name ("wall-ride"). 
+skiing.jpg:
+         Our Model Prediction: Two people wearing ski gear are sitting on a ski lift, hanging in the air with their skis on.
+         BLIP-2 Prediction:   Two skiers ride a high ski lift, dressed in helmets and goggles, with their skis dangling against the clear blue sky.
+         Anaylsis:  Our model uses simple words ("hanging in the air"). BLIP-2 uses more descriptive vocabulary ("dangling against clear blue sky"). 
+dog_shake.jpg:
+         Our Model Prediction:   A dog is shaking its body in the water, making splashes all around.
+         BLIP-2 Prediction:   A wet dog vigorously shakes off water, sending droplets flying in all directions while standing in a shallow pond. 
+         Anaylsis:   Our model captures the exact action. BLIP-2 enhances it with adverbs like "vigorously.
 
 
 
